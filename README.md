@@ -44,7 +44,8 @@ PostMan Collection for api is under build folder
 
 Import SPGroup.postman_collection.json and start exploring APIs
 
-Add Friend http://localhost:8080/friends/add
+1) Add Friend http://localhost:8080/friends/add
+```
 "headerData": [
   {
     "key": "Content-Type",
@@ -61,8 +62,10 @@ requestBody : {
 		"test19@test.com"
 	]
 }
+```
 
 2) User's Friend http://localhost:8080/friends
+```
 "headerData": [
   {
     "key": "Content-Type",
@@ -76,8 +79,9 @@ requestBody : {
 requestBody : {
 		"email": "test1@test.com"
 }
-
+```
 3) Common Friends http://localhost:8080/friends/common
+```
 "headerData": [
   {
     "key": "Content-Type",
@@ -94,8 +98,10 @@ requestBody : {
 		"test1@test.com"
 	]
 }
+```
 
 4) Block Subscription http://localhost:8080/user/subscriptions/block
+```
 "headerData": [
   {
     "key": "Content-Type",
@@ -110,8 +116,10 @@ requestBody : {
 	"requestor": "test1@test.com",
 	"target": "test19@test.com"
 }
+```
 
 5) Block Subscription http://localhost:8080/user/subscriptions/add
+```
 "headerData": [
   {
     "key": "Content-Type",
@@ -126,8 +134,10 @@ requestBody : {
 	"requestor": "test1@test.com",
 	"target": "test11@test.com"
 }
+```
 
 6) Subscriptions http://localhost:8080/user/subscriptions
+```
 "headerData": [
   {
     "key": "Content-Type",
@@ -142,3 +152,4 @@ requestBody : {
 	"sender": "test1@test.com",
 	"text": "Hello buddy test20@test.com"
 }
+```
