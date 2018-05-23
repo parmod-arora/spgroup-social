@@ -19,7 +19,7 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name ="tbl_subscription")
+@Table(name ="tbl_user_subscription")
 public class Subscription {
 	
 	@Id
@@ -31,7 +31,7 @@ public class Subscription {
 	private User user;
 	
 	@ManyToOne
-	@JoinColumn(name="subscribe_to_id")
+	@JoinColumn(name="subscribed_to")
 	private User subscribeTo;
 	
 	@Column(name="status")
