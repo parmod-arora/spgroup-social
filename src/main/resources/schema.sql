@@ -4,7 +4,7 @@ drop table tbl_user_subscription if exists;
 drop sequence if exists hibernate_sequence;
 create sequence hibernate_sequence start with 1 increment by 1;
 create table tbl_user (
-    id bigint not null,
+    id bigint auto_increment  not null,
     email varchar(255),
     created_on timestamp,
     updated_on timestamp,
@@ -16,7 +16,7 @@ create table tbl_user_friends (
         primary key (user_id, friend_id)
     );
 create table tbl_user_subscription (
-    id bigint not null,
+    id bigint auto_increment not null,
     status varchar(255),
     subscribed_to bigint,
     user_id bigint,

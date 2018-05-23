@@ -55,6 +55,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 		} else {
 			subscription.setStatus(SubscriptionStatus.Block);
 		}
+		subscriptionRepository.save(subscription);
 	}
 
 	@Override
